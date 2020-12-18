@@ -7,37 +7,7 @@
 //
 
 import Foundation
-import Alamofire
 struct ConstantsAPI {
-    struct ProductionServer {
-        static let baseUrl = "http://lighthouse-eg.net/edal/public/api/provider/"
-    }
-    struct APIParameterKey {
-        static let apiKey = ""
-    }
-    static let lang = String(Locale.preferredLanguages[0].prefix(2))
+    static let baseUrl = "http://data.fixer.io/api/"
+    static let accessKey = "?access_key=6c70e4dccfd4d9177741e1692b4d6c1d"
 }
-enum HTTPHeaderField: String {
-    case authentication = "Authorization"
-    case contentType = "Content-Type"
-    case acceptType = "Accept"
-    case acceptEncoding = "Accept-Encoding"
-}
-
-enum ContentType: String {
-    case contentType = "application/json"
-
-}
-
-//
-//struct Languages {
-//    static func getLanguagesId () -> String {
-//        if String(Locale.preferredLanguages[0].prefix(2)) == "en" {
-//            return "280ede65-e3ca-4449-9502-77df344351ca"
-//        }else if String(Locale.preferredLanguages[0].prefix(2)) == "ar" {
-//            return "4be57d56-8ba3-4462-83ab-47a370308280"
-//        }else {
-//            return ""
-//        }
-//    }
-//}

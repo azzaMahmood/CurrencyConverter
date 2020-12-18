@@ -10,5 +10,4 @@ import Alamofire
 protocol APIConfigurations: URLRequestConvertible {
     var method: HTTPMethod {get}
     var path: String {get}
-    var parameters: Parameters? {get}
 }
