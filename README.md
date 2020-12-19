@@ -30,3 +30,6 @@
 - After being navigated to the other screen, then you can see the "EGP" currency and a TextField on its left.
 - Also the "EUR" currency is down it with a lable showing the amount after the convertion process,
 - If an amount is entered in the TextField it's updted to the "EUR" currency according to the rate between the two currencies.
+### Unit-Testing
+- Unit-Testing the logic which converts the currency symbol into a flag beside the currency symbol.
+- Unit-Testing the logic which converts the amount of the base currency into the amount of the selected currency.
