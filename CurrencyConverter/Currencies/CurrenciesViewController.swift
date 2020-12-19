@@ -57,6 +57,8 @@ extension CurrenciesViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CurrencyRatesTableViewCell", for: indexPath) as! CurrencyRatesTableViewCell
+        // Double(round(1000*x)/1000)
+
         let currency = viewModel.getFlags()[indexPath.row] + ": [" + viewModel.currencyRates[indexPath.row] + "]"
         cell.configureCellDescription(currencyRate: currency)
         return cell

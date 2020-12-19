@@ -15,7 +15,8 @@ class ConvertCurrenciesViewModel {
     var currencyRate = 0.0
     
     func convertCurrency(baseCurrency: String) -> String {
-        return String((Double(baseCurrency) ?? 0) * currencyRate)
+        let convertedCurrency = (Double(baseCurrency) ?? 0) * currencyRate
+        return String((convertedCurrency*100).rounded()/100)
     }
     
 }
